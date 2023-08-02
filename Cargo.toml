@@ -1,0 +1,12 @@
+[package]
+name = "neuroswitchres"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+winapi = { version = "0.3", features = ["wingdi", "winuser","wincon","shellapi"] }
+systray = "0.4.0"
+include_dir = "0.7.3"
+tempfile = "3.2.0"
