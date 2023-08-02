@@ -1,8 +1,12 @@
+// Copyright (c) 2023 Sylvain Bernard
+// Ce fichier fait partie de neuro-switchres, qui est distribué sous la licence GPLv3.
+// Voir le fichier LICENSE.txt pour plus de détails.
+
 #![windows_subsystem = "windows"]
 extern crate winapi;
 
 use std::ptr::null_mut;
-use winapi::um::wingdi::{DEVMODEW, DISPLAY_DEVICEW}; // Correct import path
+use winapi::um::wingdi::{DEVMODEW, DISPLAY_DEVICEW};
 use winapi::um::winuser::{CDS_UPDATEREGISTRY, ChangeDisplaySettingsExW, ENUM_CURRENT_SETTINGS, EnumDisplayDevicesW, EnumDisplaySettingsW};
 use systray::Application;
 
